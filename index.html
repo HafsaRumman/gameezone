@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Zone</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" type="x-icon" href="logo.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.min.js" integrity="sha512-ykZ1QQr0Jy/4ZkvKuqWn4iF3lqPZyij9iRv6sGqLRdTPkY69YX6+7wvVGmsdBbiIfN/8OdsI7HABjvEok6ZopQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+</head>
+<body class="max-w-screen-2xl mx-auto p-0">
+    
+    <header>
+        <nav style=" font-weight:bold; padding-top: 10px; padding-bottom:10px; padding-left:10px; padding-right:10px; " class=" flex items-center justify-between bg-gray-200" p-10 >
+
+            <div class="flex items-center justify-between">
+                <img class="h-14 w-14 " src="image/logo.png">
+                <h1 style="font-size: 30px;" class="ps-5">Gaming <span style="font-size: 30px;" class="bg-cyan-500 text-white rounded-xl px-3">Zone</span></h1>
+            </div>
+
+            <div>
+                <ul style="font-size: 17px; font-weight:600" class=" h-[800]:hidden hidden lg:flex flex items-center justify-between gap-5 font-medium text-lg xl:text-xl 3sm:hidden">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Product</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Service</a></li>
+                    <li><a href="#">About</a></li>
+                </ul>
+            </div>
+
+            <div style="font-size: 25px;" class=" hidden lg:flex xl:text-xl gap-10 fs-20">
+                <button class=" text-white font-medium hover:text-black bg-cyan-400 hover:  hover:bg-gray-200pe-5 p-2 rounded-lg ">Sign Up</button>
+                <button class="pe-5 text-black hover:text-white bg-gray-200 hover:bg-cyan-400 hover: p-2 hover: rounded-lg ">Login</button>
+            </div>
+
+            <div class="block lg:hidden flex">
+                <i style="display: flex;" class="fa-solid fa-bars text-2xl py-1.5 px-2 flex bg-gray-300 rounded-md"></i>
+            </div>
+
+        </nav>
+
+
+
+
+<div style="margin-left: 20px;" id="default-carousel" class="relative w-full me-96 m-5" data-carousel="slide">
+    <!-- Carousel wrapper -->
+    <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
+         <!-- Item 1 -->
+        <div class="hidden duration-700 ease-in-out xl:h-[500]" data-carousel-item>
+            <img src="image/Banner-1.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+        </div>
+        <!-- Item 2 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img src="image/Banner-3.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+        </div>
+        <!-- Item 3 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img src="image/Banner-4.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+        </div>
+    </div>
+    <!-- Slider indicators -->
+    <div class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
+        <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
+        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
+    </div>
+    <!-- Slider controls -->
+    <button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+        <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+            <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
+            </svg>
+            <span class="sr-only">Previous</span>
+        </span>
+    </button>
+    <button type="button" class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+        <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+            <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+            </svg>
+            <span class="sr-only">Next</span>
+        </span>
+    </button>
+</div>
+
+
+</header>
+<main>
+     <section>
+        <h1 style="text-size:30px; font-weight:bold;" class="uppercase fw-bold text-3xl lg:pt-12 justify-center text-center align-middle h-96 fs-20 text-gray-600 ">Best Gaming product</h1>
+        <p style="margin-top: -290px;" class="text-md text-center align-middle fs-10 text-gray-700 ">Buy top rated gaming product from below!</p>
+
+        <div>
+            <div class="flex items-center justify-center mt-8 px-5">
+                <div class="grid grid-cols-4 gap-8"> 
+                    <!-- card 1 -->
+                    <div class="h-[490px] w-72 bg-white border border-gray-200 rounded-lg shadow">
+                        <a href="#">
+                            <img class="rounded-t-lg" src="image/card-pic-1.png" alt="" />
+                        </a>
+                        <div class="p-5">
+                            <a href="#">
+                                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">PowerPlay Alpha Mouse</h5>
+                            </a>
+                            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400 h-28 overflow-hidden">High-performance gaming mouse with programmable buttons, customizable RGB backlighting, and a high-DPI optical sensor for exceptional tracking accuracy and speed.</p>
+                            <a href="#" class="inline-flex items-center px-3 py-2 text-sm md:text-base font-medium text-center text-white bg-blue-500 rounded-lg hover:bg-blue-600 focus:ring-4 focus:outline-none focus:ring-blue-300">
+                                Buy Now
+                                 <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- card 2 -->
+                    <div class="h-[490px] w-72 bg-white border border-gray-200 rounded-lg shadow">
+                        <a href="#">
+                            <img class="rounded-t-lg" src="image/card-pic-1.png" alt="" />
+                        </a>
+                        <div class="p-5">
+                            <a href="#">
+                                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">PowerPlay Alpha Mouse</h5>
+                            </a>
+                            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400 h-28 overflow-hidden">High-performance gaming mouse with programmable buttons, customizable RGB backlighting, and a high-DPI optical sensor for exceptional tracking accuracy and speed.</p>
+                            <a href="#" class="inline-flex items-center px-3 py-2 text-sm md:text-base font-medium text-center text-white bg-blue-500 rounded-lg hover:bg-blue-600 focus:ring-4 focus:outline-none focus:ring-blue-300">
+                                Buy Now
+                                 <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- card 3 -->
+                    <div class="h-[490px] w-72 bg-white border border-gray-200 rounded-lg shadow">
+                        <a href="#">
+                            <img class="rounded-t-lg" src="image/card-pic-1.png" alt="" />
+                        </a>
+                        <div class="p-5">
+                            <a href="#">
+                                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">PowerPlay Alpha Mouse</h5>
+                            </a>
+                            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400 h-28 overflow-hidden">High-performance gaming mouse with programmable buttons, customizable RGB backlighting, and a high-DPI optical sensor for exceptional tracking accuracy and speed.</p>
+                            <a href="#" class="inline-flex items-center px-3 py-2 text-sm md:text-base font-medium text-center text-white bg-blue-500 rounded-lg hover:bg-blue-600 focus:ring-4 focus:outline-none focus:ring-blue-300">
+                                Buy Now
+                                 <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- card 4 -->
+                    <div class="h-[490px] w-72 bg-white border border-gray-200 rounded-lg shadow">
+                        <a href="#">
+                            <img class="rounded-t-lg" src="image/card-pic-1.png" alt="" />
+                        </a>
+                        <div class="p-5">
+                            <a href="#">
+                                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">PowerPlay Alpha Mouse</h5>
+                            </a>
+                            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400 h-28 overflow-hidden">An ultra-responsive gaming mouse with customizable buttons, RGB lighting, and a precision sensor for competitive gamers.</p>
+                            <a href="#" class="inline-flex items-center px-3 py-2 text-sm md:text-base font-medium text-center text-white bg-blue-500 rounded-lg hover:bg-blue-600 focus:ring-4 focus:outline-none focus:ring-blue-300">
+                                Buy Now
+                                 <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    
+                    <!-- card 5 -->
+                    <div class="h-[490px] w-72 bg-white border border-gray-200 rounded-lg shadow">
+                        <a href="#">
+                            <img class="rounded-t-lg" src="image/card-pic-1.png" alt="" />
+                        </a>
+                        <div class="p-5">
+                            <a href="#">
+                                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">PowerPlay Alpha Mouse</h5>
+                            </a>
+                            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400 h-28 overflow-hidden">An ultra-responsive gaming mouse with customizable buttons, RGB lighting, and a precision sensor for competitive gamers.</p>
+                            <a href="#" class="inline-flex items-center px-3 py-2 text-sm md:text-base font-medium text-center text-white bg-blue-500 rounded-lg hover:bg-blue-600 focus:ring-4 focus:outline-none focus:ring-blue-300">
+                                Buy Now
+                                 <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- card 6 -->
+                    <div class="h-[490px] w-72 bg-white border border-gray-200 rounded-lg shadow">
+                        <a href="#">
+                            <img class="rounded-t-lg" src="image/card-pic-1.png" alt="" />
+                        </a>
+                        <div class="p-5">
+                            <a href="#">
+                                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">PowerPlay Alpha Mouse</h5>
+                            </a>
+                            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400 h-28 overflow-hidden">An ultra-responsive gaming mouse with customizable buttons, RGB lighting, and a precision sensor for competitive gamers.</p>
+                            <a href="#" class="inline-flex items-center px-3 py-2 text-sm md:text-base font-medium text-center text-white bg-blue-500 rounded-lg hover:bg-blue-600 focus:ring-4 focus:outline-none focus:ring-blue-300">
+                                Buy Now
+                                 <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- card 7 -->
+                    <div class="h-[490px] w-72 bg-white border border-gray-200 rounded-lg shadow">
+                        <a href="#">
+                            <img class="rounded-t-lg" src="image/card-pic-1.png" alt="" />
+                        </a>
+                        <div class="p-5">
+                            <a href="#">
+                                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">PowerPlay Alpha Mouse</h5>
+                            </a>
+                            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400 h-28 overflow-hidden">An ultra-responsive gaming mouse with customizable buttons, RGB lighting, and a precision sensor for competitive gamers.</p>
+                            <a href="#" class="inline-flex items-center px-3 py-2 text-sm md:text-base font-medium text-center text-white bg-blue-500 rounded-lg hover:bg-blue-600 focus:ring-4 focus:outline-none focus:ring-blue-300">
+                                Buy Now
+                                 <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- card 8 -->
+                    <div class="h-[490px] w-72 bg-white border border-gray-200 rounded-lg shadow">
+                        <a href="#">
+                            <img class="rounded-t-lg" src="image/card-pic-1.png" alt="" />
+                        </a>
+                        <div class="p-5">
+                            <a href="#">
+                                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">PowerPlay Alpha Mouse</h5>
+                            </a>
+                            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400 h-28 overflow-hidden">An ultra-responsive gaming mouse with customizable buttons, RGB lighting, and a precision sensor for competitive gamers.</p>
+                            <a href="#" class="inline-flex items-center px-3 py-2 text-sm md:text-base font-medium text-center text-white bg-blue-500 rounded-lg hover:bg-blue-600 focus:ring-4 focus:outline-none focus:ring-blue-300">
+                                Buy Now
+                                 <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+    </section>
+</main>
+<footer></footer>
+<script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
+
+</body>
+</html>
